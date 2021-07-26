@@ -1,18 +1,24 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-// import firestore from '@react-native-firebase/firestore';
 import {Appbar} from 'react-native-paper';
 
 const Home = () => {
-  // const [users, setUsers] = React.useState([]);
-
   return (
-    <Appbar.Header>
-      <Appbar.Content title="Todos" subtitle="List of all todos" />
-    </Appbar.Header>
+    <>
+      <Appbar.Header>
+        <Appbar.Content title="Todos" subtitle="List of all todos" />
+      </Appbar.Header>
+      <View style={styles.todoList}>
+        <Text>List of Todos goes here...</Text>
+      </View>
+    </>
   );
 };
 
 export default Home;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  todoList: {
+    padding: 25,
+  },
+});
