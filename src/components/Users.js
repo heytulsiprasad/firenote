@@ -3,14 +3,8 @@ import {StyleSheet, Text, View} from 'react-native';
 // import firestore from '@react-native-firebase/firestore';
 import {Appbar} from 'react-native-paper';
 
-const Home = () => {
+const Users = () => {
   // const [users, setUsers] = React.useState([]);
-
-  const _goBack = () => console.log('Went back');
-
-  const _handleSearch = () => console.log('Searching');
-
-  const _handleMore = () => console.log('Shown more');
 
   // React.useEffect(() => {
   //   firestore()
@@ -25,14 +19,11 @@ const Home = () => {
 
   return (
     <Appbar.Header>
-      <Appbar.BackAction onPress={_goBack} />
-      <Appbar.Content title="Title" subtitle="Subtitle" />
-      <Appbar.Action icon="magnify" onPress={_handleSearch} />
-      <Appbar.Action icon="dots-vertical" onPress={_handleMore} />
+      <Appbar.Content title="Users" subtitle="List of all users" />
     </Appbar.Header>
   );
 };
 
-export default Home;
+export default Users;
 
 const styles = StyleSheet.create({});
